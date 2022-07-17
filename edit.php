@@ -36,7 +36,7 @@
 			  $file = addslashes(file_get_contents($_FILES["image"]["tmp_name"]));
 
 			  $query = "UPDATE restaurants SET title = '$restaurant',
-			  description = '$desc', Image = '$file' WHERE title = '$oldrestaurant' ";
+			  description = '$desc', photo = '$file' WHERE title = '$oldrestaurant' ";
 			  $query_run = mysqli_query($con, $query);
 
 			  if($query_run){
